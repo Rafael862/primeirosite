@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Reggae+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&family=Reggae+One&family=Roboto+Condensed:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+
+h1#menutopo {
+    font-family: 'Russo One', sans-serif;
+    font-style: oblique;
+    color: white;
+    top: -15;
+    
+}
+img.imagem {
+    box-shadow: black;
+    border-radius: 21px;
+    box-shadow: 5px 5px 5px 5px  black; /*sombreamento*/
+}
+a.voltamenu {
+    color: white;
+}
+div#divtopo {
+    background-color: rgb(248, 0, 0);
+    position: relative;
+    top: -22px;
+    left: -8px;   
+    width: 101.1%;
+}
+a {
+    text-decoration: black;
+    color: black;
+}
+h1, h2, h3 {
+    font-family: 'Lato', sans-serif;
+}
+
+p {
+    text-align: justify; /*justificado*/
+    font-family: Arial, Helvetica, sans-serif;
+    text-indent: 20px; /*paragráfo*/
+    color: rgb(59, 59, 59);
+    margin: 10px;
+}
+body {
+    background-color: rgb(230, 231, 248);
+}
+
+/*FORMATAÇÃO DO MENU DE NAVEGAÇÃO*/
+nav#menu ul {
+    list-style: none;
+    text-transform: uppercase;
+    position: absolute; /*posição fixa*/
+    top: 58px; /*altura do menu*/
+    left: -35px; /*margem esquerda*/
+}
+/*FORMATAÇÃO DOS ÍTENS DO MENU*/
+li {
+    padding: 5px; /*espaço entre as linhas*/
+    margin: 4px; /*margem entre os menus*/
+    transition: background-color 1s;
+    text-decoration: black;
+    
+    
+}
+
+li#primeiro {
+    display: inline-block;
+    font-size: 18px;
+    position: relative;
+    top: -13px;
+    left: -11px;
+    
+}
+
+/*FORMATAÇÃO DA TRANSIÇÃO DE COR DOS ÍTENS*/
+nav#menu li:hover {
+    
+    text-decoration: underline; /*faz o sublinhado das letras no menu*/
+}
+
+/*COR DAS LETRAS DO MENU*/
+nav#menu a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+/*Ocultando menu principal que serve somente para os mecanismos de buscas*/
+h1#menuprincipal {
+    opacity: 0;
+}

@@ -1,91 +1,110 @@
-@import url('https://fonts.googleapis.com/css2?family=Reggae+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&family=Reggae+One&family=Roboto+Condensed:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Reggae+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&family=Reggae+One&family=Roboto+Condensed:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
+
+*{
+    margin: 0; /*sempre resetar os padroes do navegador, pois todos são diferentes.*/
+    padding: 0;
+    box-sizing: border-box; /*colocar obrigatoriamente no site*/
+    font-family: "Russo One", sans-serif;
+    max-width: 1024px; /*definir a largura dentro do body e criar o header para o cabeçalho*/
+    
+}
 
 h1#menutopo {
-    font-family: 'Russo One', sans-serif;
-    font-style: oblique;
-    color: white;
-    top: -15;
-    
-}
-}
-div#divtopo {
-    background-color: rgb(248, 0, 0);
-    position: relative;
-    top: -22px;
-    left: -8px;   
-    width: 101.1%;
-}
-a {
-    text-decoration: black;
-    color: black;
-}
-h1, h2 {
-    font-family: 'Lato', sans-serif;
+  
+  font-style: oblique;
+  color: white;
+  
+  
 }
 
+div#divtopo {
+  background-color: rgb(248, 0, 0);
+  
+  
+}
+a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  
+}
+h1,
+h2, h3, h4, h5, h6 {
+  font-family: "Lato", sans-serif;
+
+}
+ul, ol, li{
+    list-style: none;/*resetando os padroes de listas, obrigatorio.*/
+    list-style-type: none;
+}
 p {
-    text-align: justify; /*justificado*/
-    font-family: Arial, Helvetica, sans-serif;
-    text-indent: 20px; /*paragráfo*/
-    
-    margin: 10px;
+  text-align: justify; /*justificado*/
+  font-family: Arial, Helvetica, sans-serif;
+  text-indent: 20px; /*paragráfo*/
+
+  margin: 10px;
 }
 body {
-    background-color: rgb(230, 231, 248);
+  background-color: #f7f7f7;
 }
 iframe {
-    margin-left: 45px;
-    box-shadow: black;
-    border-radius: 21px;
-    box-shadow: 5px 5px 5px 5px  black; /*sombreamento*/
+    width: 300px;
+    height: 180px;
+  border-radius: 6px;
+  
+  appearance: none;
 }
 /*FORMATAÇÃO DO MENU DE NAVEGAÇÃO*/
 nav#menu ul {
-    list-style: none;
-    text-transform: uppercase;
-    position: absolute; /*posição fixa*/
-    top: 58px; /*altura do menu*/
-    left: -35px; /*margem esquerda*/
+  
+  text-transform: uppercase;
+  position: absolute; /*posição fixa*/
+  top: 52px; /*altura do menu*/
+  left: ; /*margem esquerda*/
 }
 /*FORMATAÇÃO DOS ÍTENS DO MENU*/
 li {
-    padding: 5px; /*espaço entre as linhas*/
-    margin: 4px; /*margem entre os menus*/
-    transition: background-color 1s;
-    text-decoration: black;
-    
+  padding: 5px; /*espaço entre as linhas*/
+  margin: 4px; /*margem entre os menus*/
+  transition: background-color 1s;
+  text-decoration: black;
 }
 
-li#primeiro {
-    display: inline-block;
-    font-size: 18px;
-    position: relative;
-    top: -13px;
-    left: -11px;
-    
+.links-pagina {
+  display: inline-block;
+  font-size: 18px;
+  position: relative;
+  top: -13px;
+  
 }
 
 /*FORMATAÇÃO DA TRANSIÇÃO DE COR DOS ÍTENS*/
 nav#menu li:hover {
-    text-decoration: underline; /*faz o sublinhado das letras no menu*/
-    transition: 1s;
+  text-decoration: underline; /*faz o sublinhado das letras no menu*/
+  
 }
 
 /*COR DAS LETRAS DO MENU*/
 nav#menu a:hover {
-    color: white;
-    text-decoration: underline;
+  color: white;
+  text-decoration: underline;
 }
 
-/*Ocultando menu principal que serve somente para os mecanismos de buscas*/
+/*Ocultando "menu principal" que serve somente para os mecanismos de buscas*/
 h1#menuprincipal {
-    opacity: 0;
+  opacity: 0;
 }
-@media (max-width: 655px) {
-    iframe#introducao{
-        width: 320px;
-        height: 150px;
-    }
+
+@media (max-width: 320px) {
+  iframe#introducao {
+    width: 300px;
+    height: 180px;
+  }
+}
+@media (max-width: 375px) and (min-width: 320px) {
+  iframe#introducao {
+    width: 350px;
+    height: 200px;
+  }
 }

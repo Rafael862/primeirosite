@@ -91,6 +91,16 @@ div.capacetes {
     float: left;
     margin: 12px;
     box-shadow: 5px 5px 5px 5px  black;
-    
-
 }
+img#R1{
+    max-width: 90%;
+    max-height: 90%; 
+}
+
+@media (max-width: 380px) {
+    img#R1{
+        
+        
+    }
+}
+    

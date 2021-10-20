@@ -3,12 +3,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
 
 *{
-    margin: 0; /*sempre resetar os padroes do navegador, pois todos são diferentes.*/
+     /*sempre resetar os padroes do navegador, pois todos são diferentes.*/
     padding: 0;
     box-sizing: border-box; /*colocar obrigatoriamente no site*/
     font-family: "Russo One", sans-serif;
-    max-width: 1024px; /*definir a largura dentro do body e criar o header para o cabeçalho*/
     
+}
+
+
+
+
+main{
+  margin: 0 auto;
+  max-width: 1280px; /*definir a largura dentro do body e criar o header para o cabeçalho*/
+  
 }
 
 h1#menutopo {
@@ -102,9 +110,7 @@ h1#menuprincipal {
     width: 800px;
     height: 460px;
   }
-  label{
-    display: none;
-  }
+  
 }
 
 @media (max-width: 1024px) {
@@ -112,19 +118,19 @@ h1#menuprincipal {
     width: 800px;
     height: 460px;
   }
+  
+}
+@media (min-width: 768px){
   label{
     display: none;
   }
 }
-
 @media (max-width: 768px) {
   iframe#introducao {
     width: 560px;
     height: 320px;
   }
-  label{
-    display: none;
-  }
+  
 }
 
 @media (max-width: 425px) {
@@ -132,9 +138,7 @@ h1#menuprincipal {
     width: 410px;
     height: 235px;
   }
-  label{
-    display: none;
-  }
+  
   .links-pagina{
     display: none;
   }

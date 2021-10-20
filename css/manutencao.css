@@ -2,31 +2,42 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&family=Reggae+One&family=Roboto+Condensed:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
 
+
+*{
+     /*sempre resetar os padroes do navegador, pois todos são diferentes.*/
+    padding: 0;
+    box-sizing: border-box; /*colocar obrigatoriamente no site*/
+    font-family: "Russo One", sans-serif;
+    
+}
+
+
+
+
+main{
+  margin: 0 auto;
+  max-width: 1280px; /*definir a largura dentro do body e criar o header para o cabeçalho*/
+  
+}
 h1#menutopo {
     font-family: 'Russo One', sans-serif;
     font-style: oblique;
     color: white;
-    top: -15;
+    
     
 }
-img.imagem {
-    box-shadow: black;
-    border-radius: 21px;
-    box-shadow: 5px 5px 5px 5px  black; /*sombreamento*/
-}
+
 a.voltamenu {
     color: white;
 }
 div#divtopo {
     background-color: rgb(248, 0, 0);
-    position: relative;
-    top: -22px;
-    left: -8px;   
-    width: 101.1%;
+    
+    
 }
 a {
-    text-decoration: black;
-    color: black;
+    text-decoration: none;
+    color: white;
 }
 h1, h2, h3 {
     font-family: 'Lato', sans-serif;
@@ -37,7 +48,7 @@ p {
     font-family: Arial, Helvetica, sans-serif;
     text-indent: 20px; /*paragráfo*/
     color: rgb(59, 59, 59);
-    margin: 10px;
+    
 }
 body {
     background-color: rgb(230, 231, 248);
@@ -49,7 +60,7 @@ nav#menu ul {
     text-transform: uppercase;
     position: absolute; /*posição fixa*/
     top: 58px; /*altura do menu*/
-    left: -35px; /*margem esquerda*/
+    
 }
 /*FORMATAÇÃO DOS ÍTENS DO MENU*/
 li {
@@ -61,7 +72,7 @@ li {
     
 }
 
-li#primeiro {
+.links-pagina {
     display: inline-block;
     font-size: 18px;
     position: relative;
@@ -70,9 +81,9 @@ li#primeiro {
     
 }
 iframe {
-    margin-left: 45px;
+    
     box-shadow: black;
-    border-radius: 21px;
+    border-radius: 5px;
     box-shadow: 5px 5px 5px 5px  black; /*sombreamento*/
 }
 
@@ -92,3 +103,65 @@ nav#menu a:hover {
 h1#menuprincipal {
     opacity: 0;
 }
+
+@media (max-width: 1440px) {
+    .videos {
+      width: 800px;
+      height: 460px;
+
+    }
+    
+  }
+  
+  @media (max-width: 1024px) {
+    .videos {
+      width: 800px;
+      height: 460px;
+    }
+    
+  }
+  @media (min-width: 768px){
+    label{
+      display: none;
+    }
+  }
+  @media (max-width: 768px) {
+    .videos {
+      width: 560px;
+      height: 320px;
+    }
+    
+  }
+  
+  @media (max-width: 425px) {
+    .videos {
+      width: 410px;
+      height: 235px;
+    }
+    
+    .links-pagina{
+      display: none;
+    }
+  }
+  
+  
+  @media (max-width: 375px) {
+    .videos {
+      width: 350px;
+      height: 220px;
+    }
+    .links-pagina{
+      display: none;
+    }
+  }
+  
+  @media (max-width: 320px) {
+    .videos {
+      width: 270px;
+      height: 180px;
+      
+    }
+    .links-pagina{
+      display: none;
+    }
+  }

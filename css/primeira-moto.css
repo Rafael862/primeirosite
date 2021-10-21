@@ -60,6 +60,32 @@ body {
     background-color: rgb(230, 231, 248);
 }
 
+.div-principal{
+  display: table;
+}
+.corpo{
+  display: table-cell;
+  float: left;
+}
+.texto{
+  display: table-cell;
+  float: left;
+  width: 60%;
+}
+
+.div-principal2{
+  display: table;
+}
+.corpo2{
+  display: table-cell;
+  float: right;
+}
+.texto2{
+  display: table-cell;
+  float: right;
+  width: 60%;
+}
+
 /*FORMATAÇÃO DO MENU DE NAVEGAÇÃO*/
 nav#menu ul {
     list-style: none;
@@ -105,7 +131,7 @@ h1#menuprincipal {
 }
 
 /*aqui entra a responsividade do vídeo na tela inicial*/
-@media (max-width: 1440px) {
+/*@media (max-width: 1440px) {
     #scooter, #city, #naked, #trail {
       width: 800px;
       height: 460px;
@@ -169,7 +195,7 @@ h1#menuprincipal {
       display: none;
     }
   }
-  
+  */
   .menu{
     display: none;
     color: #fff;

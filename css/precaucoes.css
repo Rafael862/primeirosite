@@ -12,7 +12,9 @@
 }
 
 
-
+#menu{
+    margin-left: 10px;
+  }
 
 main{
  margin: 0 auto;
@@ -25,7 +27,7 @@ h1#menutopo {
     font-style: oblique;
     color: white;
     top: -15;
-    
+    margin-left: 10px;
 }
 img.imagem {
     box-shadow: black;

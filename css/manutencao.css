@@ -12,7 +12,9 @@
 }
 
 
-
+#menu{
+  margin-left: 10px;
+}
 
 main{
   margin: 0 auto;
@@ -23,7 +25,7 @@ h1#menutopo {
     font-family: 'Russo One', sans-serif;
     font-style: oblique;
     color: white;
-    
+    margin-left: 10px;
     
 }
 

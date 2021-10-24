@@ -9,9 +9,28 @@
     font-family: "Russo One", sans-serif;
     
 }
+/*----------------------------------------menu hamburguer----------------------------------*/
+.listahamburguer{
+  display: none;
+  color: #fff;
+  background-color: #252525;
+  margin: 0;
+  padding: 10px;
+}
 
+.menu-item{
+  list-style-type: none;
+}
 
+#menuHamburguer:checked + .listahamburguer{
+  display: block;
+}
 
+#menuHamburguer{
+  opacity: 0;
+}
+
+/*----------------------------------------menu hamburguer----------------------------------*/
 
 main{
   margin: 0 auto;
@@ -23,7 +42,7 @@ h1#menutopo {
   font-family: 'Russo One', sans-serif;
   font-style: oblique;
   color: white;
-  
+  margin-left: 10px;
   
 }
 

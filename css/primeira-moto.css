@@ -18,12 +18,14 @@ main{
  max-width: 1280px; /*definir a largura dentro do body e criar o header para o cabeçalho*/
  
 }
-
+#menu{
+  margin-left: 10px;
+}
 h1#menutopo {
     font-family: 'Russo One', sans-serif;
     font-style: oblique;
     color: white;
-    top: -15;
+    margin-left: 10px;
     
 }
 img.imagem {
@@ -178,51 +180,181 @@ h1#menuprincipal {
     }
   }
   @media (max-width: 768px) {
-    #scooter, #city, #naked, #trail {
-      width: 560px;
-      height: 320px;
-    }
     
-  }
+    
+  }*/
   
   @media (max-width: 425px) {
-    #scooter, #city, #naked, #trail {
-      width: 410px;
-      height: 235px;
+    .container{
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-gap: 10px;
+      grid-template-areas: 
+      
+      'box1'
+      'box2'
+      'box3'
+      'box4'
+      'box5'
+      'box6'
+      'box7'
+      'box8' ;
     }
+    
+    .box1{
+    grid-area: box1;
+    }
+    
+    .box2{
+    grid-area: box2;  
+    }
+    
+    .box3{
+    grid-area: box3;  
+    }
+    
+    .box4{
+    grid-area: box4;  
+    }
+    
+    .box5{
+    grid-area: box5;  
+    }
+    
+    .box6{
+    grid-area: box6;  
+    }
+    
+    .box7{
+    grid-area: box7;
+    }
+    
+    .box8{
+      grid-area: box8;
+    }
+    
+    
     
     .links-pagina{
       display: none;
     }
-  }
+  
+  
   
   
   @media (max-width: 375px) {
-    #scooter, #city, #naked, #trail {
-      width: 370px;
-      height: 220px;
+    .container{
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-gap: 10px;
+      grid-template-areas: 
+      
+      'box1'
+      'box2'
+      'box3'
+      'box4'
+      'box5'
+      'box6'
+      'box7'
+      'box8' ;
     }
-    #trail{
-        width: 350px;
-        height: 240px;
+    
+    .box1{
+    grid-area: box1;
     }
+    
+    .box2{
+    grid-area: box2;  
+    }
+    
+    .box3{
+    grid-area: box3;  
+    }
+    
+    .box4{
+    grid-area: box4;  
+    }
+    
+    .box5{
+    grid-area: box5;  
+    }
+    
+    .box6{
+    grid-area: box6;  
+    }
+    
+    .box7{
+    grid-area: box7;
+    }
+    
+    .box8{
+    grid-area: box8;
+    }
+    }
+    
+    
     .links-pagina{
       display: none;
     }
   }
   
+  
   @media (max-width: 320px) {
-    #scooter, #city, #naked, #trail {
-      width: 40%;
+    .container{
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-gap: 10px;
+      grid-template-areas: 
       
+      'box1'
+      'box2'
+      'box3'
+      'box4'
+      'box5'
+      'box6'
+      'box7'
+      'box8' ;
     }
+    
+    .box1{
+    grid-area: box1;
+    }
+    
+    .box2{
+    grid-area: box2;  
+    }
+    
+    .box3{
+    grid-area: box3;  
+    }
+    
+    .box4{
+    grid-area: box4;  
+    }
+    
+    .box5{
+    grid-area: box5;  
+    }
+    
+    .box6{
+    grid-area: box6;  
+    }
+    
+    .box7{
+    grid-area: box7;
+    }
+    
+    .box8{
+    grid-area: box8;
+    }
+    
     
     
     .links-pagina{
       display: none;
     }
-  }
-  */
+  
+  
   .menu{
     display: none;
     color: #fff;
@@ -239,7 +371,6 @@ h1#menuprincipal {
     display: block;
   }
   
-  #meuMarcador{
+  #meuMarcador {
     opacity: 0;
-    
-  }
+  }}

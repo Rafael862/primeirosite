@@ -2,119 +2,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&family=Reggae+One&family=Roboto+Condensed:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
 
-
-*{
-     /*sempre resetar os padroes do navegador, pois todos são diferentes.*/
-    padding: 0;
-    box-sizing: border-box; /*colocar obrigatoriamente no site*/
-    font-family: "Russo One", sans-serif;
-    
-}
-
-
-#menu{
-  margin-left: 10px;
-}
-
-main{
-  margin: 0 auto;
-  max-width: 1280px; /*definir a largura dentro do body e criar o header para o cabeçalho*/
-  
-}
-h1#menutopo {
-    font-family: 'Russo One', sans-serif;
-    font-style: oblique;
-    color: white;
-    margin-left: 10px;
-    
-}
-
-a.voltamenu {
-    color: white;
-}
-div#divtopo {
-    background-color: rgb(248, 0, 0);
-    
-    
-}
-a {
-    text-decoration: none;
-    color: white;
-}
-h1, h2, h3 {
-    font-family: 'Lato', sans-serif;
-}
-
-p {
-    text-align: justify; /*justificado*/
-    font-family: Arial, Helvetica, sans-serif;
-    text-indent: 20px; /*paragráfo*/
-    color: rgb(59, 59, 59);
-    
-}
-body {
-    background-color: rgb(230, 231, 248);
-}
-
-/*FORMATAÇÃO DO MENU DE NAVEGAÇÃO*/
-nav#menu ul {
-    list-style: none;
-    text-transform: uppercase;
-    position: absolute; /*posição fixa*/
-    top: 58px; /*altura do menu*/
-    
-}
-/*FORMATAÇÃO DOS ÍTENS DO MENU*/
-li {
-    padding: 5px; /*espaço entre as linhas*/
-    margin: 4px; /*margem entre os menus*/
-    transition: background-color 1s;
-    text-decoration: black;
-    
-    
-}
-
-.links-pagina {
-    display: inline-block;
-    font-size: 18px;
-    position: relative;
-    top: -13px;
-    left: -11px;
-    
-}
 iframe {
-    
     box-shadow: black;
     border-radius: 5px;
-    box-shadow: 5px 5px 5px 5px  black; /*sombreamento*/
+    box-shadow: 5px 5px 5px 5px  black; 
 }
-
-/*FORMATAÇÃO DA TRANSIÇÃO DE COR DOS ÍTENS*/
-nav#menu li:hover {
-    
-    text-decoration: underline; /*faz o sublinhado das letras no menu*/
-}
-
-/*COR DAS LETRAS DO MENU*/
-nav#menu a:hover {
-    color: white;
-    text-decoration: underline;
-}
-
-/*Ocultando menu principal que serve somente para os mecanismos de buscas*/
-h1#menuprincipal {
-    opacity: 0;
-}
-
-@media (max-width: 1440px) {
-    .videos {
-      width: 800px;
-      height: 460px;
-
-    }
-    
-  }
-  
   @media (max-width: 1024px) {
     .videos {
       width: 800px;
@@ -132,7 +24,6 @@ h1#menuprincipal {
       width: 560px;
       height: 320px;
     }
-    
   }
   
   @media (max-width: 425px) {
@@ -146,14 +37,10 @@ h1#menuprincipal {
     }
   }
   
-  
   @media (max-width: 375px) {
     .videos {
       width: 350px;
       height: 220px;
-    }
-    .links-pagina{
-      display: none;
     }
   }
   
@@ -162,8 +49,5 @@ h1#menuprincipal {
       width: 270px;
       height: 180px;
       
-    }
-    .links-pagina{
-      display: none;
     }
   }

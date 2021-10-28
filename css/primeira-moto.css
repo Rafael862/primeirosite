@@ -2,375 +2,70 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&family=Reggae+One&family=Roboto+Condensed:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
 
-*{
-    /*sempre resetar os padroes do navegador, pois todos são diferentes.*/
-   padding: 0;
-   box-sizing: border-box; /*colocar obrigatoriamente no site*/
-   font-family: "Russo One", sans-serif;
-   
-}
-
-
-
-
-main{
- margin: 0 auto;
- max-width: 1280px; /*definir a largura dentro do body e criar o header para o cabeçalho*/
- 
-}
-#menu{
-  margin-left: 10px;
-}
-h1#menutopo {
-    font-family: 'Russo One', sans-serif;
-    font-style: oblique;
-    color: white;
-    margin-left: 10px;
-    
-}
 img.imagem {
     box-shadow: black;
     border-radius: 21px;
-    box-shadow: 5px 5px 5px 5px  black; /*sombreamento*/
+    box-shadow: 5px 5px 5px 5px  black;
 }
-a.voltamenu {
-    color: white;
-    
-}
-div#divtopo {
-    background-color: rgb(248, 0, 0);
-    position: relative;
-    top: -22px;
-    left: -8px;   
-    width: 101.1%;
-}
-a {
-    text-decoration: none;
-    color: white;
-}
-h1, h2, h3 {
-    font-family: 'Lato', sans-serif;
-}
-
-p {
-    text-align: justify; /*justificado*/
-    font-family: Arial, Helvetica, sans-serif;
-    text-indent: 20px; /*paragráfo*/
-    color: rgb(59, 59, 59);
-    margin: 10px;
-}
-body {
-    background-color: rgb(230, 231, 248);
-}
-
-.container{
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-  grid-gap: 10px;
-  grid-template-areas: 
-  
-  'box1 box2'
-  'box4 box3'
-  'box5 box6'
-  'box8 box7' ;
-}
-
-.box1{
-grid-area: box1;
-}
-
-.box2{
-grid-area: box2;  
-}
-
-.box3{
-grid-area: box3;  
-}
-
-.box4{
-grid-area: box4;  
-}
-
-.box5{
-grid-area: box5;  
-}
-
-.box6{
-grid-area: box6;  
-}
-
-.box7{
-grid-area: box7;
-}
-
-.box8{
-grid-area: box8;
-}
-
 .motos{
   width: 100%;
   height: 100%;
   object-fit: cover;
   border-radius: 15px;
 }
-
-/*FORMATAÇÃO DO MENU DE NAVEGAÇÃO*/
-nav#menu ul {
-    list-style: none;
-    text-transform: uppercase;
-    position: absolute; /*posição fixa*/
-    top: 58px; /*altura do menu*/
-    
-}
-/*FORMATAÇÃO DOS ÍTENS DO MENU*/
-li {
-    padding: 5px; /*espaço entre as linhas*/
-    margin: 4px; /*margem entre os menus*/
-    transition: background-color 1s;
-    text-decoration: black;
-    
-    
-}
-
-.links-pagina {
-    display: inline-block;
-    font-size: 18px;
-    position: relative;
-    top: -13px;
-    left: -11px;
-    
-}
-
-/*FORMATAÇÃO DA TRANSIÇÃO DE COR DOS ÍTENS*/
-nav#menu li:hover {
-    
-    text-decoration: underline; /*faz o sublinhado das letras no menu*/
-}
-
-/*COR DAS LETRAS DO MENU*/
-nav#menu a:hover {
-    color: white;
-    text-decoration: underline;
-}
-
-/*Ocultando menu principal que serve somente para os mecanismos de buscas*/
-h1#menuprincipal {
-    opacity: 0;
-}
-
-/*aqui entra a responsividade do vídeo na tela inicial*/
-/*@media (max-width: 1440px) {
-    #scooter, #city, #naked, #trail {
-      width: 800px;
-      height: 460px;
-    }
-    
-  }
-  
-  @media (max-width: 1024px) {
-    #scooter, #city, #naked, #trail {
-      width: 800px;
-      height: 460px;
-    }
-    
-  }
-  @media (min-width: 768px){
-    label{
-      display: none;
-    }
-  }
-  @media (max-width: 768px) {
-    
-    
-  }*/
-  
-  @media (max-width: 425px) {
-    .container{
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-gap: 10px;
-      grid-template-areas: 
       
-      'box1'
-      'box2'
-      'box3'
-      'box4'
-      'box5'
-      'box6'
-      'box7'
-      'box8' ;
-    }
-    
-    .box1{
-    grid-area: box1;
-    }
-    
-    .box2{
-    grid-area: box2;  
-    }
-    
-    .box3{
-    grid-area: box3;  
-    }
-    
-    .box4{
-    grid-area: box4;  
-    }
-    
-    .box5{
-    grid-area: box5;  
-    }
-    
-    .box6{
-    grid-area: box6;  
-    }
-    
-    .box7{
-    grid-area: box7;
-    }
-    
-    .box8{
-      grid-area: box8;
-    }
-    
-    
-    
-    .links-pagina{
-      display: none;
-    }
-  
-  
-  
-  
-  @media (max-width: 375px) {
-    .container{
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-gap: 10px;
-      grid-template-areas: 
-      
-      'box1'
-      'box2'
-      'box3'
-      'box4'
-      'box5'
-      'box6'
-      'box7'
-      'box8' ;
-    }
-    
-    .box1{
-    grid-area: box1;
-    }
-    
-    .box2{
-    grid-area: box2;  
-    }
-    
-    .box3{
-    grid-area: box3;  
-    }
-    
-    .box4{
-    grid-area: box4;  
-    }
-    
-    .box5{
-    grid-area: box5;  
-    }
-    
-    .box6{
-    grid-area: box6;  
-    }
-    
-    .box7{
-    grid-area: box7;
-    }
-    
-    .box8{
-    grid-area: box8;
-    }
-    }
-    
-    
-    .links-pagina{
-      display: none;
-    }
-  }
-  
-  
-  @media (max-width: 320px) {
-    .container{
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-gap: 10px;
-      grid-template-areas: 
-      
-      'box1'
-      'box2'
-      'box3'
-      'box4'
-      'box5'
-      'box6'
-      'box7'
-      'box8' ;
-    }
-    
-    .box1{
-    grid-area: box1;
-    }
-    
-    .box2{
-    grid-area: box2;  
-    }
-    
-    .box3{
-    grid-area: box3;  
-    }
-    
-    .box4{
-    grid-area: box4;  
-    }
-    
-    .box5{
-    grid-area: box5;  
-    }
-    
-    .box6{
-    grid-area: box6;  
-    }
-    
-    .box7{
-    grid-area: box7;
-    }
-    
-    .box8{
-    grid-area: box8;
-    }
-    
-    
-    
-    .links-pagina{
-      display: none;
-    }
-  
-  
-  .menu{
-    display: none;
-    color: #fff;
-    background-color: #ffffff;
-    margin: 0;
-    padding: 10px;
-  }
-  
-  .menu-item{
-    list-style-type: none;
-  }
-  
-  #meuMarcador:checked + .menu{
-    display: block;
-  }
-  
-  #meuMarcador {
-    opacity: 0;
-  }}
+      @media screen and (min-width: 768px){
+        label{
+          display: none;
+        }
+        .container{
+          grid-template-columns: repeat(2,2fr);
+          
+        }
+      }
+        .container{
+          display: grid;
+          grid-template-columns: repeat(1,1fr);
+          grid-gap: 10px;
+          grid-template-areas: 
+          
+          'box1'
+          'box2'
+          'box3'
+          'box4'
+          'box5'
+          'box6'
+          'box7'
+          'box8' ;
+        }
+        .box1{
+          grid-area: box1;
+          }
+          
+          .box2{
+          grid-area: box2;  
+          }
+          
+          .box3{
+          grid-area: box3;  
+          }
+          
+          .box4{
+          grid-area: box4;  
+          }
+          
+          .box5{
+          grid-area: box5;  
+          }
+          
+          .box6{
+          grid-area: box6;  
+          }
+          
+          .box7{
+          grid-area: box7;
+          }
+          
+          .box8{
+          grid-area: box8;
+          }
